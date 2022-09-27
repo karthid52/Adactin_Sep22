@@ -1,0 +1,46 @@
+Feature: hotel Booking In Adactin Application
+@TC01
+Scenario: login Page
+Given user Launch The Application
+When user Enter The In Username Field
+And user Enter The In Password Field
+Then user Click On Login Button And It Navigate To Search Hotel Page
+
+
+@TC02
+Scenario: Search Hotel Page
+When user Select The Hotel Location
+And user Select The Hotel Type
+And user Select The Room Type
+And user Select The Number Of Rooms
+And user Select The Check In Date
+And user Select The Check Out Date
+And user Select The Adults Per Room
+Then user Click On Search Button It Will Navigate to Select Hotel Page
+
+@TC03
+Scenario: Select Hotel Page
+When user Select Select Button In Select Hotel Page
+Then user Click On Continue Button It Will Navigate To Book A Hotel Page
+
+@TC04
+Scenario: Book A Hotel Page
+And user Enter The First Name In First Name Field
+And user Enter The Last Name In Last Name Field
+And user Enter The Billing Address In Address Field
+And user Enter Credit Card No In Field
+And user Select Credit Card Type
+And user Select Expiry Date
+And user Select Cvv Number
+Then user Click On Book Now Button And It Will Navigate To Confirmation Page
+
+
+
+
+
+
+
+
+
+
+
